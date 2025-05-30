@@ -2,23 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Google Conversion Trigger</title>
+  <title>Perfume Offer</title>
+
+  <!-- Global site tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17066481469"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'AW-17066481469');
 
-    // Fire the conversion when the page loads
-    gtag('event', 'conversion', {
-      send_to: 'AW-17066481469/4EjoCN6IkMUaEL2u98k_'
-    });
+    gtag('config', 'AW-17066481469');
   </script>
 </head>
 <body>
-  <h1>Conversion Triggered ✅</h1>
-  <p>You can now close this page.</p>
+
+  <h1>Special Perfume Deal</h1>
+  <p>Click below to continue</p>
+  <a href="https://89aromatic.lt/your-affiliate-link" onclick="fireConversion()">Shop Now</a>
+
+  <!-- Conversion tracking event -->
+  <script>
+    function fireConversion() {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17066481469/4EjoCN6IkMUaEL2u98k_',
+        'value': 1.0,
+        'currency': 'EUR',
+        'transaction_id': ''
+      });
+    }
+  </script>
+
 </body>
 </html>
-<!-- rebuild -->
